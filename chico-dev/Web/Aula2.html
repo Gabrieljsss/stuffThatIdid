@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aula2</title>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+
+			    var url = "http://botanicapp.com.br/filmes.php";
+
+			    $.get(url, function(data){
+			    	var filmes = JSON.parse(data);
+			    	$.each(filmes, function(i, filme){
+								var $imagemTitulo = $("<div class='filmes' />");
+								$($imagemTitulo).attr("id", filme.id);
+								$("#container").append($imagemTitulo);
+								$($imagemTitulo).append($("<img />").attr("src", filme.figura));
+								$($imagemTitulo).append("<h2>" + filme.titulo + "</h2>");
+								$($imagemTitulo).append("<p class = 'resumo'>" + filme.resumo + "</p>");
+			    	});
+			    });
+
+
+					$("body").on("mouseover",".filmes",function(){
+
+						$(this).css("background-color", "rgba(255,255,255,0.2)");
+					});
+					$("body").on("mouseout",".filmes",function(){
+
+						$(this).css("background-color", "black");
+					});
+
+					$("body").on("click", ".filmes", function(){
+
+					});
+
+
+
+
+			});
+
+		</script>
+
+		<style type="text/css">
+
+				body:first-child{
+					width: 1050px;
+					color: red;
+				}
+				h1{
+					color: #3a61d1;
+					text-align: center;
+				}
+				#container h1{
+					color: white;
+				}
+				body{
+					background-color: black;
+				}
+				img{
+					margin-top: 10px;
+					width: 233px;
+					height: 132px;
+				}
+				#container {
+					margin-left: auto;
+					margin-right: auto;
+					width: 939px;
+					//background-color: aqua;
+					display: table;
+					border: 5px solid #3a61d1;
+					border-radius: 10px;
+
+				}
+				.filmes {
+					border-radius: 10px;
+					border: 3px solid #3a61d1;
+					text-align: center;
+					display: table;
+					float: left;
+					width: 310px;
+					height: 280px;
+					background-color: black;
+					color: white;
+					border-collapse: collapse;
+				}
+				.resumo{
+					width: 280px;
+					height: 100px;
+					text-align: justify;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				#myModal{
+
+					position: fixed;
+					top: 0;
+					left: 50px;
+					z-index: 9999;
+					display: none;
+
+				}
+
+
+			}
+
+		</style>
+	</head>
+
+
+
+	<body>
+	<h1>PopcorntimeBR</h1>
+	<div id= "container"></div>
+
+	<div id="myModal">
+
+		<div class="modal-dialog" role="document">
+
+			<div class="modal-content">
+
+				<div class="modal-header">
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+
+				</div>
+
+				<div id="respostas" class="modal-body">
+
+					<img id = "fotoFilme" src="#" style="float: left"/>
+					<h3 id = "titulo"></h3>
+					<h4 id = "genero"></h4>
+					<p id = "elenco"></p>
+					<p id = "descricao"></p>
+
+
+
+
+				</div>
+
+						<div class="modal-footer">
+
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+						</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	</body>
+
+</html>

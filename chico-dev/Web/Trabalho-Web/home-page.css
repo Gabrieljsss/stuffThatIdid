@@ -1,0 +1,259 @@
+ul{
+	list-style-type:none;
+}
+body{
+	margin: 0px;
+}
+
+header{
+	background-color: #32a4c9;
+	height: 75px;
+	border-bottom: 3px solid #1a4a70;
+}
+h2{
+	color:  #32a4c9;
+	word-wrap:break-word;
+	text-align: center;
+}
+h3{
+	text-align: center;
+	color: grey;
+	
+}
+.textoImagemRedonda{
+	padding-left: 30px;
+	word-wrap:break-word;
+	width:257px;
+	text-align: center;
+	margin-right:0px;
+	color: white;
+}
+.textoImagemQuadrada{
+	padding-left: 30px;
+	word-wrap:break-word;
+	width:257px;
+	text-align: center;
+	margin-right:0px;
+}
+.paragrafoImagemQuadrada{
+	
+	text-align: center;
+	width:257px;
+	word-wrap:break-word;
+	text-align: center;
+	
+}
+.container{
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container{
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container2{
+	width: 950px;
+	margin-left: auto;
+}
+
+#mid{
+	background-color:#1d4872;
+	height:270px;
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.imagemCapa {
+		background-image: url(images/home-laiza-oto.png);
+		background-repeat: no-repeat;
+		height: 546px;
+		margin-left: auto;
+		margin-right: auto;
+		background-position: center;
+		width : 100%;
+		background-color: #9fe6fc;
+
+	}
+.imagemBlog{
+		background-image: url(images/blog.png);
+		background-repeat: no-repeat;
+		height: 32px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 19px;
+		background-position: center;
+		width : 100%;
+		background-color: white;
+		padding-top: 20px;
+}
+
+.divOrelha{
+		width: 316.67px;
+		height: 270px;
+		float: left;
+		border: 0px solid black;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:20px;
+		
+}
+.divCara{
+		width: 316.67px;
+		height: 270px;
+		float: left;
+		border: 0px solid black;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:20px;
+}
+.divNariz{
+		width: 316.67px;
+		height: 270px;
+		float: left;
+		border: 0px solid black;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:20px;
+}
+.imagemCircular{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.alinharTexto{
+	text-align: center;
+}
+.divTresImagensQuadradas{
+	background-color:white;
+	height:400px;
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+.divRedesSociaisNome{
+	width: 257px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	height: 20px;
+	color: grey;
+	
+}
+.imagemRedesSociais{
+	
+		display: block;
+		margin-left: 4px;
+		margin-right: 4px;
+		float: right;
+		
+		
+}
+.divImgQuadrada1{
+		width: 316px;
+		height: 390px;
+		float: left;
+		border: 0px solid black;
+		margin-left: auto;
+		margin-right: auto;
+}
+.divImgQuadrada2{
+		width: 316px;
+		height: 390px;
+		float: left;
+		border: 0px solid black;
+		margin-left: auto;
+		margin-right: auto;
+}
+.divImgQuadrada3{
+		width: 316px;
+		height: 390px;
+		float: left;
+		border: 0px solid black;
+		margin-left: auto;
+		margin-right: auto;
+}
+.imagemQuadrada{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+}
+.rodape1{
+		width:100%;
+		height: 85px;
+		background-color: white;
+}
+.rodapeLista{
+		float:left;
+		width: 360px;
+}
+.listaLinks{
+	text-decoration: none;
+	color: white;
+}
+.textoRodape{
+	color: white; font-size: 15px; text-align: center; width: 950px;background-color: #04a4cb; margin:0px;
+}
+.telefoneRodape{
+	float: right; color: lightblue; font-size: 20px; margin:0px;
+}
+.divTelefoneRodape{
+	float: right; width: 950px; height: 50px;
+}
+.divRodapeParte1{
+	background-color:white;
+}
+li{
+	color: white;
+	font-size: 20px;
+}
+
+
+footer{
+	background-color: #32a4c9;
+	height: 302px;
+}
+
+#logo{
+	float: left;
+}
+
+#menu{
+	text-align: right;
+}
+
+#linha1{
+	padding-top: 14px;
+}
+
+#linha1 a{
+	text-decoration: none;
+	color: #9fe6fc;
+	font-size: 14px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+}
+#menu ul {
+	list-style:none;
+}
+
+#menu ul  li{
+	display: inline;
+}
+
+#menu ul  li a{
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin-left: 20px;
+}
+
+#menu ul  li a:hover{
+	color: #264a7c;
+}
+

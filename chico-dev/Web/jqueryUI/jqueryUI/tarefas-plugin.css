@@ -1,0 +1,21 @@
+/*
+.task {
+	width: 850px;
+}
+
+.task div {
+	width: 800px;
+	float: left;
+}
+.task:nth-child(odd) {
+	background-color: #aaa;
+}
+.task span {
+	width:40px;
+	height: 40px;
+}
+.task img {
+	width: inherit;
+	height: inherit;	
+}
+*/

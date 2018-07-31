@@ -1,0 +1,29 @@
+.task {
+	width:800px;
+}
+.task:nth-child(odd){
+	background-color: #ddd;
+}
+
+.task-label{
+	width:750px;
+	float:left;
+}
+
+.trash {
+	width:48px;
+	height: 48px;
+	float:left;
+}
+.trash img {
+	width:inherit;
+	height:inherit;
+}
+
+.task-date {
+
+}
+				<span class="trash"></span>
+				<div class="task-date"></div>
+			</div>
+			*/

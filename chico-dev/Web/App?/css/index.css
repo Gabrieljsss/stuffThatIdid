@@ -1,0 +1,12 @@
+html, body{
+  width: 100%;
+  height: 100%;
+}
+body {
+  style=max-width:400px;
+}
+
+#mySlider img {
+  height: 100%;
+  width: 100%;
+}

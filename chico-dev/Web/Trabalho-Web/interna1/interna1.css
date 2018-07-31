@@ -1,0 +1,141 @@
+ul{
+	list-style-type:none;
+}
+.rodape1{
+		width:100%;
+		height: 85px;
+		background-color: white;
+}
+.rodapeLista{
+		float:left;
+		width: 360px;
+}
+.listaLinks{
+	text-decoration: none;
+	color: white;
+}
+.textoRodape{
+	color: white; font-size: 15px; text-align: center; width: 950px;background-color: #04a4cb; margin:0px;
+}
+.telefoneRodape{
+	float: right; color: lightblue; font-size: 20px; margin:0px;
+}
+.divTelefoneRodape{
+	float: right; width: 950px; height: 50px;
+}
+.divRodapeParte1{
+	background-color:white;
+}
+body{
+	margin: 0px;
+}
+li{
+	color: white;
+	font-size: 20px;
+}
+
+header{
+	background-color: #32a4c9;
+	height: 75px;
+	border-bottom: 3px solid #1a4a70;
+}
+
+.container{
+	max-width: 950px;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logo{
+	float: left;
+}
+
+#menu{
+	text-align: right;
+}
+
+#linha1{
+	padding-top: 14px;
+}
+
+#linha1 a{
+	text-decoration: none;
+	color: #9fe6fc;
+	font-size: 14px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+}
+#menu ul {
+	list-style:none;
+}
+
+#menu ul  li{
+	display: inline;
+}
+
+#menu ul  li a{
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin-left: 20px;
+}
+
+#menu ul  li a:hover{
+	color: #264a7c;
+}
+
+.imagemCapa{
+		background-image: url(otopediatria.jpg);
+		background-repeat: no-repeat;
+		background-color: #9fe6fc;
+		height: 140px;
+		margin-left: auto;
+		margin-right: auto;
+		background-position: center;
+		width : 100%;
+		margin-bottom: 34px;
+	
+}
+
+#consultaimg{
+	margin-right: 31px;
+	margin-bottom: 49px;
+	float: left;
+}
+
+h2{
+	color:  #32a4c9
+	
+	
+	
+}
+
+#espacamentop{
+	margin-bottom: 68px;
+}
+
+.imgsbebe{
+	float: left;
+	margin-right: 19px;
+}
+
+.textbebe{
+	max-width:215px;
+	float: left;
+	margin-right: 19px;
+	
+}
+.textbebe1{
+	max-width:215px;
+	clear:left;
+	float: left;
+	margin-right: 19px;
+	
+}
+p{
+	text-align:justify;
+	color: #8d8d8d;
+	
+}

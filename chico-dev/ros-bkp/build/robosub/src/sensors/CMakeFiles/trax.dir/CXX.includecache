@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gabrieljsss/ros/src/robosub/src/sensors/PniTrax.cpp
+sensors/PniTrax.h
+/home/gabrieljsss/ros/src/robosub/src/sensors/sensors/PniTrax.h
+string
+-
+netinet/in.h
+-
+
+/home/gabrieljsss/ros/src/robosub/src/sensors/PniTrax.h
+string
+-
+utility/serial.hpp
+/home/gabrieljsss/ros/src/robosub/src/sensors/utility/serial.hpp
+
+/home/gabrieljsss/ros/src/robosub/src/utility/serial.hpp
+cstring
+-
+cstdlib
+-
+cstdio
+-
+fcntl.h
+-
+termios.h
+-
+unistd.h
+-
+stdint.h
+-
+sys/ioctl.h
+-
+string
+-
+

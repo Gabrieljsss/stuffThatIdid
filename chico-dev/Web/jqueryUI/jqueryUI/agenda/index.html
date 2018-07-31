@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="./scripts/jquery.js"></script>
+		<script src="./scripts/todoList.js"></script>
+		<script>
+			$(function(){
+				console.log(todoList);
+				$("#adicionarTarefa").click(function(){
+					var rotulo = $("#novaTarefa").val();
+					var categoriaId = $(".selected").attr("id");
+					var categoria = getCategoriaById(categoriaId, todoList);
+					
+
+					addTarefa(rotulo, categoria);
+
+					$("#tarefas").append($("<p />").text(rotulo));
+					$("#tarefas").append("<img src='./img/tash.png'/>");
+					$("#novaTarefa").val("");
+				});
+
+				$("#adicionarCategoria").click(function(){
+					var nomeCategoria = $("#novaCategoria").val();
+					addCategoria(nomeCategoria);
+					carregaCategorias();
+				});
+				
+				$("#categoria-list").on("click", "li", function(){
+					$("#categoria-list li").removeClass("selected");
+					$(this).addClass("selected");
+					var categoriaId = $(this).attr("id");
+
+					var categoria = getCategoriaById(categoriaId, todoList);
+					carregaTarefas(categoria);
+				});
+			});
+
+			function carregaCategorias() {
+				var categoriaSelecionadaId = $(".selected").attr("id");
+					$("#categoria-list").empty();
+
+					$.each(todoList, function(index, obj){
+						var $li = $("<li />").attr("id", obj.id).text(obj.nome);
+						if(categoriaSelecionadaId == obj.id) {
+							$li.addClass("selected");
+						}
+						$("#categoria-list")
+							.append($li);
+					});
+			}
+			function carregaTarefas(categoria) {
+				$("#tarefas").empty();
+
+				$.each(categoria.tarefas, function(index, obj){
+						var $paragrafo = $("<p />").text(obj.nome);
+				
+						$("#tarefas")
+							.append($paragrafo);
+					});
+
+			}
+
+			
+		</script>
+	</head>
+	<body>
+		<div id="categorias">
+			<ul id="categoria-list">
+				<li id="1" class="selected">Caixa de Entrada</li>
+			</ul>
+			<input type="text" id="novaCategoria" placeholder="Nova Categoria" />
+			<button id="adicionarCategoria">Nova Categoria</button>
+		</div>
+		<input type="text" id="novaTarefa" />
+			<button id="adicionarTarefa">Nova Tarefa</button>
+		<div id="tarefas">
+			
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,2 @@
+executive_smach_visualization/executive_smach_visualization:robosub:robosub_msgs:robosub_simulator:smach_viewer
+-DCATKIN_DEVEL_PREFIX=/home/gabrieljsss/ros/devel -DCMAKE_INSTALL_PREFIX=/home/gabrieljsss/ros/install -G Unix Makefiles

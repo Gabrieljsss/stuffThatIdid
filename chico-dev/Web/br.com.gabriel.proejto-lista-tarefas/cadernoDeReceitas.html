@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Caderno de Receitas</title>
+<script src="jquery-3.1.0.min.js"></script>
+<script src="cadernoReceitas.js"></script>
+<link href="caderno.css" rel="stylesheet" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+	<aside>
+		<img src="book.png" height="64px" width="64px">
+		<a href="#"><img id = "inserirCategoria" src="icone2.png" height="64px" width="64px"  data-toggle="modal"
+		data-target="#myModal"></a>
+	</aside>
+
+	<div id="categorias">
+		
+			<h1>Categorias</h1>
+			<ul id="listaDeCategorias">
+
+			
+		</ul>
+
+	</div>
+
+	<div id="receitas">
+		<div id="container">
+			<header>
+				<input type="text" id="insereTarefa" placeholder="Inserir nova receita">
+				<button id = "botaoInsereTarefa"type="button" class="btn btn-default" >Inserir</button>
+			</header>
+			<ul>
+				
+			</ul>
+		</div>
+
+	</div>
+
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title"></h4>
+				</div>
+				<div class="modal-body">
+					<input type="text" id="inputFromModal" style="width: 100%; border-radius: 30px;" >
+				</div>
+				<div class="modal-footer">
+					<button id = "botaoInsere"type="button" class="btn btn-default" data-dismiss="modal">Inserir</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -Wall -Werror -std=c++11   -shared -Wl,-soname,libobstacle_map.so -o /home/gabrieljsss/ros/devel/lib/libobstacle_map.so CMakeFiles/obstacle_map.dir/obstacle_map.cpp.o 

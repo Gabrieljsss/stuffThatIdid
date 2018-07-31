@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./scripts/meu-plugin/teste.css" />
+		<script src="./scripts/jquery.js"></script>
+		<script src="./scripts/meu-plugin/teste.js"></script>
+		<script>
+			$(function(){
+				$("#enviarTeste").click(function(){
+					var mensagem = $("#mensagem").val();
+					$("#task-list").addNewTask(mensagem);
+				});
+			});
+
+		</script>
+	</head>
+	<body>
+		<input type="text" id="mensagem" />
+		<button id="enviarTeste">Testando...</button>
+		<div id="task-list">
+
+		</div>
+	</body>
+</html>

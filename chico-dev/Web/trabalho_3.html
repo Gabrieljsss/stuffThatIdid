@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculadora</title>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+
+
+			$(document).ready(function(){
+			    $("#multiplicar").click(function(){
+			        var n1 = parseFloat($("#n1").val());
+			        var n2 = parseFloat($("#n2").val());
+			        var r = n1*n2;
+			        $("#Results").text(r);
+			        $("#Results").css("background-color", "lightgreen");
+			    });
+
+			    $("#dividir").click(function(){
+			        var n1 = parseFloat($("#n1").val());
+			        var n2 = parseFloat($("#n2").val());
+			        var r = n1/n2;
+			        $("#Results").text(r);
+			        $("#Results").css("background-color", "lightgreen");
+			    });
+
+			    $("#somar").click(function(){
+			        var n1 = parseFloat($("#n1").val());
+			        var n2 = parseFloat($("#n2").val());
+			        var r = (n1+n2);
+			        $("#Results").text(r);
+			        $("#Results").css("background-color", "lightgreen");
+			    });
+
+			    $("#subtrair").click(function(){
+			        var n1 = parseFloat($("#n1").val());
+			        var n2 = parseFloat($("#n2").val());
+			        var r = n1-n2;
+			        $("#Results").text(r);
+			        $("#Results").css("background-color", "lightgreen");
+			    });
+
+
+			});
+
+
+		</script>
+
+		<style type="text/css">
+
+			#Results{
+				height: 18px;
+				width: 184px;
+				border: 1px solid black;
+				background-color: grey;
+				display: table;
+			}
+			#corpo{
+				width: 180px;
+				display: table;
+				background-color: lightgrey;
+			}
+
+			#dividir {
+				float: right;
+			}
+			#subtrair {
+				float: right;
+			}
+			button {
+				width: 75px;
+			}
+			input {
+				width: 180px;
+				
+
+			}
+
+		</style>
+	</head>
+
+
+
+	<body>
+
+	<div id="corpo">
+		<input type="float" name="n1" id="n1" placeholder="Operando 1">
+		<input type="float" name="n2" id="n2" placeholder="Operando 2">
+		<div id="Results"></div>
+		<button id = "multiplicar" >multiplicar</button>
+		<button id = "dividir" >dividir</button>
+		<button id = "somar" >somar</button>
+		<button id = "subtrair" >subtrair</button>
+		
+	<div>
+
+	</body>
+
+</html>

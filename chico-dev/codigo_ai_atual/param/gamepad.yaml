@@ -1,0 +1,17 @@
+gamepad_control:
+    axisXdeadzone: 0.1
+    axisYdeadzone: 0.1
+    axisZdeadzone: 0.1
+    axisRXdeadzone: 0.1
+    axisRYdeadzone: 0.1
+    axisRZdeadzone: 0.1
+    x_scaling_power: 2.0
+    y_scaling_power: 2.0
+    z_scaling_power: 2.0
+    rx_scaling_power: 2.0
+    ry_scaling_power: 2.0
+    rz_scaling_power: 2.0
+
+gamepad_driver:
+    device: "/dev/input/js0"
+    rate: "10"

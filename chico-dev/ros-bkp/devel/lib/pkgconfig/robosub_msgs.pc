@@ -1,0 +1,8 @@
+prefix=/home/gabrieljsss/ros/devel
+
+Name: robosub_msgs
+Description: Description of robosub_msgs
+Version: 1.0.0
+Cflags: -I/home/gabrieljsss/ros/devel/include
+Libs: -L/home/gabrieljsss/ros/devel/lib 
+Requires: 

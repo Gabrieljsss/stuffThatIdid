@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -Wall -Werror -std=c++11   -shared -Wl,-soname,librobosub_sensors.so -o /home/gabrieljsss/ros/devel/lib/librobosub_sensors.so CMakeFiles/robosub_sensors.dir/robosub_sensors.cpp.o 

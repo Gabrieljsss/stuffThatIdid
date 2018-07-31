@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Calculadora</title>
+		<meta charset="utf-8	">
+		<script src="jquery-3.1.0.min.js"></script>
+		<script>
+
+
+			$(document).ready(function(){
+			    var n1; 
+			    var n2;
+			    var num;
+			    var op;
+			    var vezesClicado = 0;
+			    var igualClicado = 0;
+			    
+			    $("#um").click(function(){
+			    	if(n1==null)
+			    		n1="1";
+			    	else
+			    	n1=n1 + "1";
+			    	$("#Results").text(n1);
+			    })
+			    $("#dois").click(function(){
+			    	if(n1==null)
+			    		n1="2";
+			    	else
+			    	n1=n1 + "2";
+			    	$("#Results").text(n1);
+			    })
+			    $("#tres").click(function(){
+			    	if(n1==null)
+			    		n1="3";
+			    	else
+			    	n1+= "3";
+			    	$("#Results").text(n1);
+			    })
+			    $("#quatro").click(function(){
+			    	if(n1==null)
+			    		n1="4";
+			    	else
+			    	n1=n1 + "4";
+			    	$("#Results").text(n1);
+			    })
+			    $("#cinco").click(function(){
+			    	if(n1==null)
+			    		n1="5";
+			    	else
+			    	n1=n1 + "5";
+			    	$("#Results").text(n1);
+			    })
+			    $("#seis").click(function(){
+			    	if(n1==null)
+			    		n1="6";
+			    	else
+			    	n1=n1 + "6";
+			    	$("#Results").text(n1);
+			    })
+			    $("#sete").click(function(){
+			    	if(n1==null)
+			    		n1="7";
+			    	else
+			    	n1=n1 + "7";
+			    	$("#Results").text(n1);
+			    })
+			    $("#oito").click(function(){
+			    	if(n1==null)
+			    		n1="8";
+			    	else
+			    	n1=n1 + "8";
+			    	$("#Results").text(n1);
+			    })
+			    $("#nove").click(function(){
+			    	if(n1==null)
+			    		n1="9";
+			    	else
+			    	n1=n1 + "9";
+			    	$("#Results").text(n1);
+			    })
+			    $("#zero").click(function(){
+			    	if(n1==null)
+			    		n1="0";
+			    	else
+			    	n1=n1 + "0";
+			    	$("#Results").text(n1);
+			    })
+
+				$("#multiplicar").click(function(){
+					vezesClicado ++;
+					if(vezesClicado==1){
+						num=parseFloat(n1);				
+						n1="";	
+						op="*";
+						$("#Results").text(op);
+					}
+					else{				
+						num= num * parseFloat(n1);
+						n1="";	
+						op="*";
+						$("#Results").text(op);	
+					}
+			   	})
+			   	$("#dividir").click(function(){
+			   		vezesClicado ++;
+			   		if (vezesClicado == 1){
+						num=parseFloat(n1);				
+						n1="";	
+						op="/";
+						$("#Results").text(op);
+					}
+					else {				
+						num = (num / parseFloat(n1));
+						n1="";	
+						op="/";
+						$("#Results").text(op);	
+					}
+			   	})
+			   	$("#somar").click(function(){
+			   		vezesClicado ++;
+
+			   		if(vezesClicado==1){
+						num=parseFloat(n1);				
+						n1="";	
+						op="+";
+						$("#Results").text(op);
+					}
+					else {
+						num=num + parseFloat(n1);				
+						n1="";	
+						op="+";
+						$("#Results").text(op);
+					}
+			   	})
+			   	$("#subtrair").click(function(){
+			   		vezesClicado ++;
+
+			   		if(vezesClicado==1){
+						num=parseFloat(n1);				
+						n1="";	
+						op="-";
+						$("#Results").text(op);
+					}
+					else{
+						num=num - parseFloat(n1);				
+						n1="";	
+						op="-";
+						$("#Results").text(op);	
+					}
+			   	})
+
+
+			   	$("#igualdade").click(function(){
+			   		
+			   		n1=parseFloat(n1);
+			   		
+			   		if (op=="*"){
+			   			console.log(num*n1);
+			   			n1=(num*n1);
+			   		}
+			   		else if(op=="/"){
+			   			console.log(num/n1);
+			   			n1=(num/n1);
+			   		}
+			   		else if(op=="+"){
+			   			console.log(num+n1);
+			   			n1=(num+n1);
+			   		}
+			   		else if(op=="-"){
+			   			console.log(num-n1);
+			   			n1=(num-n1);
+			   		}
+
+			   		$("#Results").text(n1);
+			   	})
+
+
+			   	/*//Revisão
+			   	//1
+			   	$("#corpo").hide();
+
+			   	//2
+			   	$("#mostrar").click(function(){
+			   		$("#corpo").show();
+			   	})
+
+			   	//3
+			   	$("#esconder").click(function(){
+			   		$("#corpo").hide();
+			   	})
+
+			   	//4
+			   	$("#toggle").click(function(){
+			   		$("#corpo").toggle();
+			   	})
+
+			   	//5
+			   	$(".external").css("border", "1px solid red");
+
+			   	//6
+			   	$(".header").hide();
+			   	$(".header").css("background-color", "yellow");
+			   	$(".header").fadeIn(1500);
+
+			   	//7
+			   	$(".editsection").fadeOut(1500);
+
+			   	//8
+			   	//7
+			   	//Fácil
+
+			   	//9
+			   	$("#toggleFade").click(function(){
+			   		$("#corpo").fadeToggle(2000);
+			   	})
+
+			   	//10
+			   	$("pre").hover(function(){
+			   		$("pre").css({"border":"1px solid red", "background-color":"yellow"});
+			   	})
+
+			   	//11
+			   	$("pre").click(function(){
+			   		$("pre").click(function(){
+			   			$("pre").css({"color":"white","background-color":"lightgreen"});	
+			   		})
+			   	})
+
+			   	//12
+			   	var q12 = "<span>*</span>";
+
+			   	$("input").after(q12);
+
+			   	//13
+
+			   	$("a").append("<span>Sarrei</span>")
+
+			   	//14
+
+			   	$("a span").hover(function(){
+			   		$("a span").css("color","aqua");
+			   	})
+
+			   	//15
+
+			   	$("a").click(function(){
+			   		alert($(this).attr("title"));
+			   	})
+
+			   	//16
+			   	$("input").each(function(index, element){
+			   		var x = $(this).attr("title");
+			   		$(this).attr("placeholder",x);
+			   	})*/
+
+
+			})
+
+
+		</script>
+
+		<style type="text/css">
+
+			#Results{
+				height: 18px;
+				width: 184px;
+				border: 1px solid black;
+				background-color: grey;
+				display: table;
+				color: white;
+			}
+
+			#corpo{
+				width: 180px;
+				display: table;
+				background-color: lightgrey;
+			}
+
+			#dividir {
+				float: right;
+			}
+			#subtrair {
+				float: right;
+			}
+			button {
+				width: 75px;
+			}
+			#numeros {
+				display: table;
+				margin-right: auto;
+				margin-left: auto; 
+				width: 150px;
+			}
+			#cancelar{
+				float: right;
+			}
+
+
+		</style>
+	</head>
+
+
+
+	<body>
+
+	<div id="corpo">
+		
+		<div id="Results"></div>
+		<button id = "multiplicar" >multiplicar</button>
+		<button id = "dividir" >dividir</button>
+		<button id = "somar" >somar</button>
+		<button id = "subtrair" >subtrair</button>
+		<button id = "igualdade" >=</button>
+		<button id="cancelar">C</button>
+
+		<div id="numeros">
+		<button id = "um" >1</button>
+		<button id = "dois" >2</button>
+		<button id = "tres" >3</button>
+		<button id = "quatro" >4</button>
+		<button id = "cinco" >5</button>
+		<button id = "seis" >6</button>
+		<button id = "sete" >7</button>
+		<button id = "oito" >8</button>
+		<button id = "nove" >9</button>
+		<button id = "zero" onclick="teste()">0</button>
+		</div>
+
+	</div>
+
+	
+	</body>
+
+</html>

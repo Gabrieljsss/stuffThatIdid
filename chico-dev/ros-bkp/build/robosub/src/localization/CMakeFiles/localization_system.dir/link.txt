@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -Wall -Werror -std=c++11   -shared -Wl,-soname,liblocalization_system.so -o /home/gabrieljsss/ros/devel/lib/liblocalization_system.so CMakeFiles/localization_system.dir/localization_system.cpp.o 

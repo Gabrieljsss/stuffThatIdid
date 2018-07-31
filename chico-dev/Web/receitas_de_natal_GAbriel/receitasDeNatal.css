@@ -1,0 +1,120 @@
+body {
+  background-image: url("christmas_wallpaper_hat.png");
+  background-size: 100%;
+  background-color: #450506;
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    font-weight: bold;
+    font-size: 20px;
+    display: table;
+
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#conteudo{
+
+  width: 100%;
+  background-color: white;
+  display: table;
+  margin: 0px;
+  padding: 0px;
+}
+#conteudo h1{
+  color: grey;
+  display: table;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+#conteudo, p{
+  color: black;
+}  
+}
+#logo{
+	width: 530px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	position: relative;
+	top: 300px;
+}
+#myModal p{
+	text-align: justify;
+
+}
+
+
+h1{
+  color: white;
+  display: table;
+  margin: 0  auto;
+  font-style: dinova;
+
+
+}
+
+#main img{
+  width: 310px;
+  height: 192.5px;
+}
+
+.left{
+  margin: 0px 30px;
+  height: 350px;
+  width: 350px;
+  display: table;
+  float: left;
+  clear: left;
+}
+.left img {
+  border-radius: 40px;
+}
+.right img{
+  border-radius: 40px;
+}
+
+.right{
+  margin: 0px 30px;
+  height: 350px;
+  width: 350px;
+  display: table;
+  float: right;
+  clear: right;
+}

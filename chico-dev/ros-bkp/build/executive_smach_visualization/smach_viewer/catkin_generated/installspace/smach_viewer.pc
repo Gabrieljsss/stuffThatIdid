@@ -1,0 +1,8 @@
+prefix=/home/gabrieljsss/ros/install
+
+Name: smach_viewer
+Description: Description of smach_viewer
+Version: 2.0.2
+Cflags: 
+Libs: -L/home/gabrieljsss/ros/install/lib 
+Requires: smach_ros smach_msgs

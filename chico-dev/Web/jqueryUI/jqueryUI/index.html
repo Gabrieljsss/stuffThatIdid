@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="tarefas-plugin.css" />
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="alerta-plugin.js"></script>
+		<script type="text/javascript" src="restam-plugin.js"></script>
+		<script type="text/javascript" src="tarefas-plugin.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//$("#teste").alerta("Awaaaay!!!!");
+				$("#testeTextArea").restante({maxlenght: 5}).css({"background-color":"#f00", "color":"#00f"});
+				
+				$("#add-task").click(function(){
+					//$("#tasks").addTask({"task": $("#new-task").val()});
+				})
+				
+			})
+		</script>
+	</head>
+	<body>
+		<div id="teste"></div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<div id="testeTextArea"></div>
+
+		<input type="text" id="new-task" placeholder="Entre com uma nova tarefa" />
+		<button id="add-task">nova tarefa</button>
+		<div id="tasks">
+			
+		</div>
+	</body>
+</html>

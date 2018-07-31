@@ -1,0 +1,305 @@
+
+ body{
+ 	background-color: #002434;
+ }
+ 
+ nav ul li{
+	display: inline;
+	margin-right: 22px; 
+	margin-left: 22px;
+
+}
+main nav{
+	background-color: #d5f0ff
+}
+main nav ul {
+	margin: auto;
+	margin-top: 10px;
+}
+header nav {
+	
+	float: left;
+	background-color: #002434;
+	margin: 0px;
+	padding: 0px;
+}
+header p{
+	margin:0px;
+	width:30%;
+}
+header{
+	background-color: #002434;;
+	display: table;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	width: 950px;
+}
+header h1{
+	display: inline;
+	float: left;
+	background-color: #002434;
+	margin: 0px;
+}
+#tituloCabecalho h1{
+	font-size: 32px;
+	font-family: Tahoma;
+	color: white;
+}
+ header a:link {
+	 font-size: 14px;
+	 font-family: Arial;
+    text-decoration: none;
+    color: white;
+}
+
+ header a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+ header a:hover {
+    text-decoration: none;
+    color: #11799a
+}
+
+ header a:active {
+    text-decoration: none;
+    color: white;
+}
+#surfista{
+	background-color: white;
+	height: 350px;
+}
+#imagemSurfista{
+	background-color: white;
+}
+#textoSurfista{
+	position: relative;
+	top:-280px;
+	padding-left: 20px;
+}
+#textoSurfista h1{
+	font-family: Tahoma;
+	font-size: 95px;
+	color: white;
+	margin: 0px;
+}
+#textoSurfista h4{
+	font-family: Tahoma;
+	font-size: 20px;
+	color: white;
+	margin: 0px;
+	width: 400px;
+}
+main{
+	background-color: white;
+	margin-right: auto;
+	margin-left: auto;
+	width: 950px;
+	border: 20px solid white;
+	border-bottom: 0px;
+}
+
+main div .maisInformacoes{
+   margin-right: 31px;
+}
+#blocos{
+ margin-right: -35px;
+}
+
+
+
+.maisInformacoes{
+	float: left;
+	background-color: #0076aa;
+	width: 30%;
+	margin: 25px 0;
+	height: 300px;
+	display: table;
+	
+} 
+.maisInformacoes h1{
+	font-family: Arial;
+	margin-left: 10px;
+	width: 190px;
+	height: 40px;
+	background-color: rgb(0, 165, 232);
+	text-align: center;
+	border: 2px solid #00a3e0;
+    border-radius: 5px;
+	margin-top:0px;
+}
+.maisInformacoes h1 p{
+	color: white;
+	font-size: 19px;
+	text-align: center;
+	position: relative;
+	top: 8px;
+	
+}
+.maisInformacoes a:link {
+    text-decoration: none;
+    
+}
+
+.maisInformacoes  a:visited {
+    text-decoration: none;
+    
+}
+
+.maisInformacoes  a:hover {
+    text-decoration: none;
+    
+}
+
+.maisInformacoes  a:active {
+    text-decoration: none;
+    
+}
+.textoMaisInformacoes{
+	padding: 20px;
+	padding-bottom: 0px;
+	display: table;
+	height: 200px; 
+	
+
+}
+.textoMaisInformacoes h3{
+	font-family: Tahoma;
+	color: white;
+}
+.textoMaisInformacoes p{
+	font-size: 15px;
+	font-family: Arial;
+	color: white;
+}
+#conquisteOMundo{
+	font-family: Tahoma;
+	clear: left;
+	display: table;
+	background-color: white;
+	width: 100%;
+	height: 200	px;
+
+}
+#textoImagem2{
+	width: 30%;
+	float: left;
+	padding-left: 7px;
+}
+#textoImagem2 p{
+	font-family: Arial;
+	font-size: 10px;
+}
+#imagem2{
+	float: left;
+
+}
+p{
+	margin: 0px;
+}
+#depoimento{
+	font-family: Tahoma;
+	width: 30%;
+	float: right;
+	position: relative;
+	top: -59.36px;
+}
+.saibaMais h1{
+font-family: Arial;
+font-size: 107px;
+color: #11799a
+}
+.saibaMais a:link {
+    text-decoration: none;
+    
+}
+
+.saibaMais  a:visited {
+    text-decoration: none;
+    
+}
+
+.saibaMais  a:hover {
+    text-decoration: none;
+    
+}
+
+.saibaMais  a:active {
+    text-decoration: none;
+    
+}
+#depoimento p{
+    font-size: 14px;
+	background-color: #d5f0ff;
+	border: 17px solid #d5f0ff ;
+}
+.triangulo{
+ -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
+ background-color: #d5f0ff;
+ position: relative;
+ float:right;
+ top:139px;
+ right: -40px;
+ height:10px;
+ width: 15px;
+}
+.legenda{
+font-family: Arial;
+font-size: 10px;
+margin-top: 200px;
+margin-left: 148px;
+display: inline;
+position: relative;
+top: -53px;
+}
+footer{
+	background-color: #d5f0ff;
+	margin-right: auto;
+	margin-left: auto;
+	width: 990px;
+
+}
+footer ul {
+	margin: 0px;
+	padding: 0px;
+}
+ footer a:link {
+	 font-size: 12px;
+	 font-family: Arial;
+    text-decoration: none;
+    color: #11799a;
+}
+
+ footer a:visited {
+    text-decoration: none;
+    color: #11799a;
+}
+
+ footer a:hover {
+    text-decoration: none;
+    color: #11799a
+}
+
+ footer a:active {
+    text-decoration: none;
+    color: #11799a;
+}
+footer nav ul {
+	width: 621px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.nota{
+font-family: Arial;
+font-size: 14px;
+color: white;
+margin-left: 430px;
+position: relative;
+top: 10px;
+}
+
+
+
+

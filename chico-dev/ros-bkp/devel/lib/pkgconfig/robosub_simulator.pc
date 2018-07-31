@@ -1,0 +1,8 @@
+prefix=/home/gabrieljsss/ros/devel
+
+Name: robosub_simulator
+Description: Description of robosub_simulator
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/gabrieljsss/ros/devel/lib 
+Requires: gazebo_ros gazebo_plugins roscpp

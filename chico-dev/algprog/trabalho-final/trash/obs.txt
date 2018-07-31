@@ -1,0 +1,8 @@
+-Descrever o padrão utilizado para o armazenamento de dados no arquivo
+
+-criar um arquivo para as repetidas e um com todas as figurinhas
+
+-funcoes extras:
+   agrupamento por time/posicao
+   status do jogador na temporada
+   figurinhas raras e brilhantes --> troca de duas por uma

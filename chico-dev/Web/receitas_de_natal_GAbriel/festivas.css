@@ -1,0 +1,21 @@
+body{
+	margin: 0px;
+}
+#background{
+	background-image: url("camida.jpg");
+	background-height: 540px;
+	background-repeat: no-repeat;
+	background-width: 100%;
+	opacity: 0.7;
+	height: 400px;
+}
+header {
+	width: 100%;
+	background-color: lightgrey;
+}
+header h1{
+	display: table;
+	margin: 0 auto;
+	font-family:"Helvetica Neue"; 
+	opacity: 0.7;
+}

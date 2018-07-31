@@ -1,0 +1,125 @@
+ul{
+	list-style-type:none;
+}
+body{
+	margin: 0px;
+}
+
+header{
+	background-color: #32a4c9;
+	height: 75px;
+	border-bottom: 3px solid #1a4a70;
+}
+.imagemCapa {
+		background-image: url(images/curriculo.jpg);
+		background-repeat: no-repeat;
+		background-color: #9fe6fc;
+		height: 140px;
+		margin-left: auto;
+		margin-right: auto;
+		background-position: center;
+		width : 100%;
+		
+
+}
+
+.container{
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mid{
+	background-color:#1d4872;
+	height:270px;
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+li{
+	color: white;
+	font-size: 20px;
+}
+
+
+.alinharTexto{
+	text-align: center;
+}
+
+
+
+footer{
+	background-color: #32a4c9;
+	height: 302px;
+}
+
+#logo{
+	float: left;
+}
+
+#menu{
+	text-align: right;
+}
+
+#linha1{
+	padding-top: 14px;
+}
+
+#linha1 a{
+	text-decoration: none;
+	color: #9fe6fc;
+	font-size: 14px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+}
+#menu ul {
+	list-style:none;
+}
+
+#menu ul  li{
+	display: inline;
+}
+
+#menu ul  li a{
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin-left: 20px;
+}
+
+#menu ul  li a:hover{
+	color: #264a7c;
+}
+h2 {
+	color: #32a4c9;
+}
+p {
+	 text-align: justify;
+}
+.rodape1{
+		width:100%;
+		height: 85px;
+		background-color: white;
+}
+.rodapeLista{
+		float:left;
+		width: 360px;
+}
+.listaLinks{
+	text-decoration: none;
+	color: white;
+}
+.textoRodape{
+	color: white; font-size: 15px; text-align: center; width: 950px;background-color: #04a4cb; margin:0px;
+}
+.telefoneRodape{
+	float: right; color: lightblue; font-size: 20px; margin:0px;
+}
+.divTelefoneRodape{
+	float: right; width: 950px; height: 50px;
+}
+.divRodapeParte1{
+	background-color:white;
+}
