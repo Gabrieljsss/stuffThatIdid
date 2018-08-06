@@ -97,31 +97,3 @@ if __name__ == '__main__':
                 c = 'r'
             plt.scatter([x],[y],c=c, alpha=.2)
     viewData()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##
