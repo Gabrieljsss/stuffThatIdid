@@ -5,6 +5,7 @@ Code by Gabrieljsss => gabrieljsss@poli.ufrj.br
 from matplotlib import pyplot as plt
 import numpy as np
 from random import randint
+import tensorflow as tf
 
 def viewData():
     for i in range(len(dataMatrix)):
@@ -30,12 +31,16 @@ class neuralNetwork():
     def __init__(self,trainingData):
         #defining weights and bias
         self.trainingData = trainingData
-        self.w1 = np.random.mtrand.randn()
-        self.w2 = np.random.mtrand.randn()
-        self.b = np.random.mtrand.randn()
+        self.w1 = tf.Variable(np.random.mtrand.randn())
+        self.w2 = tf.Variable(np.random.mtrand.randn())
+        self.b = tf.Variable(np.random.mtrand.randn())
         self.costs = []
+        self.sess = tf.Session()
+        self.init = tf.global_variables_initializer()
+        self.sess.run(self.init)
     def sum(self,data):
         p = self.w1 * data[0] + self.w2*data[1] + self.b
+        self.sess.run(p)
         return p
     def predict(self, data):
         pred = self.sum(data)
@@ -44,7 +49,9 @@ class neuralNetwork():
         itarations = 10000
         learningRate = 0.1
         for i in range(itarations): #training loop
-            randIndex = randint(0,len(self.trainingData)-1)
+            
+
+            '''randIndex = randint(0,len(self.trainingData)-1)
             z = self.sum(self.trainingData[randIndex])
             pred = self.predict(self.trainingData[randIndex])
 
@@ -68,9 +75,11 @@ class neuralNetwork():
 
             self.w1 = self.w1 -  learningRate * dloss_dw1
             self.w2 = self.w2 - learningRate * dloss_dw2
-            self.b =  self.b - learningRate * dloss_db
+            self.b =  self.b - learningRate * dloss_db '''
 
 if __name__ == '__main__':
+
+
     dataMatrix = [[3,   1.5, 1],
                  [2,   1,   0],
                  [4,   1.5, 1],
@@ -82,7 +91,10 @@ if __name__ == '__main__':
 
     mystery_flower = [4.5, 1]
     net = neuralNetwork(dataMatrix)
-    net.fit()
+    
+    print net.sess.run(net.sum([2,   1,   0]))
+
+    '''net.fit()
 
     for x in np.linspace(0, 6, 20):
         for y in np.linspace(0, 3, 20):
@@ -92,3 +104,4 @@ if __name__ == '__main__':
                 c = 'r'
             plt.scatter([x],[y],c=c, alpha=.2)
     viewData()
+    '''
