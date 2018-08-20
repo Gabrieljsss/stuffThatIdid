@@ -17,7 +17,10 @@ def viewData():
     plt.show()
 
 def sigmoid(n):
-    return 1 / (1 + np.exp(-n))
+    tf.Session().run(tf.global_variables_initializer())
+    expo = 1 / (1 + tf(-n))
+    sess.run(expo)
+    return expo
 
 #derivative of sigmoid
 def sigmoid_p(n):
@@ -50,7 +53,8 @@ class neuralNetwork():
         learningRate = 0.1
         for i in range(itarations): #training loop
             
-
+            randIndex = randint(0,len(self.trainingData)-1)
+            z = self.sum(self.trainingData[randIndex])
             '''randIndex = randint(0,len(self.trainingData)-1)
             z = self.sum(self.trainingData[randIndex])
             pred = self.predict(self.trainingData[randIndex])
@@ -92,8 +96,17 @@ if __name__ == '__main__':
     mystery_flower = [4.5, 1]
     net = neuralNetwork(dataMatrix)
     
-    print net.sess.run(net.sum([2,   1,   0]))
-
+    teste = (net.sum([2,   1,   0]))
+    constante = tf.constant(1.0)
+    tf.Session().run(constante)
+    sig = tf.divide(constante,teste)
+    tf.Session().run(tf.global_variables_initializer())
+    tf.Session().run(sig)
+    print sig
+    
+    #tf.Session().run(tf.global_variables_initializer())
+    #expo = 1 / (1 + np.exp(-n))
+    
     '''net.fit()
 
     for x in np.linspace(0, 6, 20):

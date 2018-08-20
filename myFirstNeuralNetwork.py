@@ -24,11 +24,10 @@ def sigmoid_p(n):
 
 class neuralNetwork():
     '''
-    The goal here is to train the neural network and predict the results
+    Rede neural para determinar a cor de uma planta utilizando como features a largura e a altua 
     '''
-
     def __init__(self,trainingData):
-        #defining weights and bias
+        #define weigths and bias 
         self.trainingData = trainingData
         self.w1 = np.random.mtrand.randn()
         self.w2 = np.random.mtrand.randn()
@@ -42,12 +41,13 @@ class neuralNetwork():
         return sigmoid(pred)
     def fit(self):
         itarations = 10000
-        learningRate = 0.1
+        learningRate = 0.1 #taxa que controla para que a rede nao passe do minimo da funcao 
         for i in range(itarations): #training loop
             randIndex = randint(0,len(self.trainingData)-1)
             z = self.sum(self.trainingData[randIndex])
             pred = self.predict(self.trainingData[randIndex])
 
+            #erro = loss = square error
             loss = (pred - self.trainingData[randIndex][2])**2
 
             dloss_dp = 2 * (pred - self.trainingData[randIndex][2])
@@ -66,11 +66,13 @@ class neuralNetwork():
             dloss_dw2 = dloss_dz * self.trainingData[randIndex][1]
             dloss_db = dloss_dz * 1
 
+            #implementacao do gradient descent algorithm 
             self.w1 = self.w1 -  learningRate * dloss_dw1
             self.w2 = self.w2 - learningRate * dloss_dw2
             self.b =  self.b - learningRate * dloss_db
 
 if __name__ == '__main__':
+    #0 e azul e 1 vermelho 
     dataMatrix = [[3,   1.5, 1],
                  [2,   1,   0],
                  [4,   1.5, 1],
@@ -80,10 +82,10 @@ if __name__ == '__main__':
                  [5.5,  1,  1],
                  [1,    1,  0]]
 
-    mystery_flower = [4.5, 1]
     net = neuralNetwork(dataMatrix)
     net.fit()
 
+    #utiliza a biblioteca matplotlib para plotar algumas previsoes e ver a distribuicao dos resultados 
     for x in np.linspace(0, 6, 20):
         for y in np.linspace(0, 3, 20):
             pred = net.predict([x,y])
